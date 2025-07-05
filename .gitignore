@@ -6,8 +6,6 @@ env/
 venv/
 .env
 
-# FastF1 cache
-f1_pitstop_strategy/f1_cache/
 
 # Pickled data
 *.ff1pkl
