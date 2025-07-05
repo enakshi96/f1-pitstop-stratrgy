@@ -1,0 +1,40 @@
+track_lengths_km = {
+    "Bahrain Grand Prix": 5.412,
+    "Saudi Arabian Grand Prix": 6.174,
+    "Australian Grand Prix": 5.278,
+    "Emilia Romagna Grand Prix": 4.909,
+    "Miami Grand Prix": 5.412,
+    "Spanish Grand Prix": 4.675,
+    "Monaco Grand Prix": 3.337,
+    "Azerbaijan Grand Prix": 6.003,
+    "Canadian Grand Prix": 4.361,
+    "British Grand Prix": 5.891,
+    "Austrian Grand Prix": 4.318,
+    "Hungarian Grand Prix": 4.381,
+    "Belgian Grand Prix": 7.004,
+    "Dutch Grand Prix": 4.259,
+    "Italian Grand Prix": 5.793,
+    "Singapore Grand Prix": 4.940,
+    "Japanese Grand Prix": 5.807,
+    "Qatar Grand Prix": 5.380,
+    "United States Grand Prix": 5.513,
+    "Mexico City Grand Prix": 4.304,
+    "São Paulo Grand Prix": 4.309,
+    "Las Vegas Grand Prix": 6.201,
+    "Abu Dhabi Grand Prix": 5.281
+}
+
+track_info = {
+    "Monza": {"PitLossTime": 21.0, "IsStreetCircuit": 0},
+    "Monaco": {"PitLossTime": 22.5, "IsStreetCircuit": 1},
+    "Silverstone": {"PitLossTime": 20.0, "IsStreetCircuit": 0},
+    "Hungaroring": {"PitLossTime": 19.8, "IsStreetCircuit": 0},
+    "Spa": {"PitLossTime": 23.0, "IsStreetCircuit": 0},
+    "Suzuka": {"PitLossTime": 20.2, "IsStreetCircuit": 0},
+    "Bahrain": {"PitLossTime": 20.5, "IsStreetCircuit": 0},
+    "Shanghai": {"PitLossTime": 21.5, "IsStreetCircuit": 0},
+    "Las": {"PitLossTime": 22.0, "IsStreetCircuit": 1},
+    "Qatar": {"PitLossTime": 20.0, "IsStreetCircuit": 0},
+    "Jeddah": {"PitLossTime": 21.5, "IsStreetCircuit": 1},
+    "Miami": {"PitLossTime": 21.0, "IsStreetCircuit": 1}
+}

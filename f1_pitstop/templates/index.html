@@ -1,0 +1,50 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>F1 Pit Strategy Recommender</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        input, button {
+            padding: 8px;
+            margin: 5px;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 12px;
+            background: #f1f1f1;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+    <h1>F1 Pit Strategy Recommender</h1>
+    <form method="get" action="/strategy_result">
+        <label>Year: <input type="number" name="year" required></label><br>
+        <label>Race Name: <input type="text" name="race" required></label><br>
+        <label>Driver Code: <input type="text" name="driver" required></label><br>
+        <button type="submit">Analyze Strategy</button>
+    </form>
+
+    {% if data %}
+    <div class="result">
+        <h2>Strategy Summary</h2>
+        <p><strong>Strategy:</strong> {{ data.strategy }}</p>
+        <p><strong>Pit Stops:</strong> {{ data.pit_stops }}</p>
+
+        <h3>Stints</h3>
+        <ul>
+            {% for stint in data.stints %}
+            <li>Stint {{ stint.stint }} – {{ stint.compound }}, {{ stint.length }} laps</li>
+            {% endfor %}
+        </ul>
+
+        <h3>Insight</h3>
+        <p>{{ data.insight }}</p>
+    </div>
+    {% endif %}
+</body>
+</html>
